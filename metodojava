@@ -1,0 +1,39 @@
+class Main {
+  //cria um metodo(sem parametro)
+    static void imPrime(){
+      System.out.println("Só imprime isso");
+    }
+  //aqui cria um  metodo passando parametro
+    static void meuMetodo(String nome) {
+    System.out.println("O nome é:" + nome);
+  }
+  //aqui cria um metodo passsando parametro
+  static void nomeEidade(String nome, int ano){
+    System.out.println(nome + " tem " +ano +" anos");
+
+  }
+  //crie um metodo chamado exib que exibe uma String na tela
+  static void exIb(String profissao){
+    System.out.println("A minha profissao é: " + profissao);
+  }
+  
+  //classe principal do java
+  public static void main (String[] args){
+  //chama metodo imPrime()
+    imPrime();
+
+    //chama metodo meuMetodo
+    meuMetodo("Edney");
+    meuMetodo("Raquel");
+    meuMetodo("Gabriel");
+
+    //chama metodo com dois parametros
+    nomeEidade("Raquel", 17);
+    nomeEidade("Gabriel", 18);
+    nomeEidade("Thiago", 17);
+
+    //chama o metodo exIb
+    exIb("Arquitetura");
+  }
+    
+}
